@@ -1,0 +1,24 @@
+# Global
+.DS_Store
+.env
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Backend (Django)
+fr-api/.env
+fr-api/__pycache__/
+fr-api/**/*.pyc
+fr-api/**/migrations/__pycache__/
+fr-api/*.sqlite3
+fr-api/static/
+fr-api/media/
+
+# VSCode / PyCharm / other IDEs
+.vscode/
+.idea/
+
+
