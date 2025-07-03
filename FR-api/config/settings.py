@@ -45,12 +45,15 @@ INSTALLED_APPS = [
     'users',
     'employees',
     'persons_of_interest',
+    
 
     'suspected',
     'incidents',
+    'mock_app',
 
     'drf_spectacular',
     'corsheaders',
+    'import_export',
 ]
 
 
