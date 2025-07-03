@@ -37,9 +37,7 @@ urlpatterns = [
     path('api/users/', include('users.urls')),
     path('api/employees/', include('employees.urls')),
     path('api/poi/', include('persons_of_interest.urls')),
-    # path('api/identified/', include('identified.urls')),
     path('api/suspected/', include('suspected.urls')),
-    # path('api/ai/', include('ai_sync.urls')),
 
 
     # OpenAPI schema

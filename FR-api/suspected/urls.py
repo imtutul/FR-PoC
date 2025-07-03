@@ -1,7 +1,8 @@
 from django.urls import path
-from .views import SuspectedMatchCreateView, SuspectedMatchListView
+from .views import IncidentListView, IncidentDetailView, AILogView
 
 urlpatterns = [
-    path('create/', SuspectedMatchCreateView.as_view(), name='suspected-create'),
-    path('list/', SuspectedMatchListView.as_view(), name='suspected-list'),
+    path("incidents/", IncidentListView.as_view(), name="incident-list"),
+    path("incidents/<int:pk>/", IncidentDetailView.as_view(), name="incident-detail"),
+    path("ai-log/", AILogView.as_view(), name="ai-log"),  # AI callback
 ]
