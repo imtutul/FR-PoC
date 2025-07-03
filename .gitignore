@@ -9,13 +9,15 @@ __pycache__/
 *.sqlite3
 
 # Backend (Django)
-fr-api/.env
-fr-api/__pycache__/
-fr-api/**/*.pyc
-fr-api/**/migrations/__pycache__/
-fr-api/*.sqlite3
-fr-api/static/
-fr-api/media/
+FR-api/.env
+FR-api/__pycache__/
+FR-api/**/*.pyc
+FR-api/**/migrations/__pycache__/
+FR-api/**/migrations/*.py
+!FR-api/**/migrations/__init__.py
+FR-api/*.sqlite3
+FR-api/static/
+FR-api/media/
 
 # VSCode / PyCharm / other IDEs
 .vscode/
