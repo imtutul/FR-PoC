@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'persons_of_interest',
 
     'suspected',
+    'incidents',
 
     'drf_spectacular',
     'corsheaders',

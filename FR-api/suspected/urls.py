@@ -1,8 +1,12 @@
 from django.urls import path
-from .views import IncidentListView, IncidentDetailView, AILogView
+from .views import (
+    SuspectCreateView, SuspectListView,
+    SuspectAddImagesView, SuspectDetailView
+)
 
 urlpatterns = [
-    path("incidents/", IncidentListView.as_view(), name="incident-list"),
-    path("incidents/<int:pk>/", IncidentDetailView.as_view(), name="incident-detail"),
-    path("ai-log/", AILogView.as_view(), name="ai-log"),  # AI callback
+    path('create/', SuspectCreateView.as_view(), name='suspect-create'),
+    path('list/', SuspectListView.as_view(), name='suspect-list'),
+    path('<int:pk>/', SuspectDetailView.as_view(), name='suspect-detail'),
+    path('<int:pk>/add-images/', SuspectAddImagesView.as_view(), name='suspect-add-images'),
 ]
