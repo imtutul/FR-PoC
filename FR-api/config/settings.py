@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-c01yb@pkys#e0f25zv&bt3k8r&v8n)$l%n4k%$tq=6-hu(_q)-'
+SECRET_KEY = 'django-insecure-#m$f6mxastf1!2v+0j+prq(kurzdh4bh0)9n@0=zm(v7=x$k0n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,22 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'core',
     'rest_framework',
-    # 'rest_framework_simplejwt',
-    # 'rest_framework_simplejwt.token_blacklist',
-
-    'users',
-    'employees',
-    'persons_of_interest',
-    
-
-    'suspected',
-    'incidents',
-    'mock_app',
 
     'drf_spectacular',
     'corsheaders',
-    'import_export',
 ]
 
 
@@ -71,6 +60,7 @@ SPECTACULAR_SETTINGS = {
     # other settings like `SERVE_INCLUDE_SCHEMA`, etc.
 }
 
+CORS_ALLOW_ALL_ORIGINS = True
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -82,8 +72,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'config.urls'
 
@@ -114,7 +102,6 @@ WSGI_APPLICATION = 'config.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-
 
 DATABASES = {
     'default': {
@@ -163,9 +150,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
