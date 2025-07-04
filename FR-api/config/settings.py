@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     'drf_spectacular',
     'corsheaders',
     'zones',
-    'cameras'
+    'cameras',
     'import_export',
 ]
 
