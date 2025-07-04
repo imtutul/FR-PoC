@@ -23,7 +23,7 @@ class Human(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
     
     def __str__(self):
-        return f"{self.get_type_display()}: {self.name or 'Unknown'}"
+        return f"{self.get_human_type_display()}: {self.name or 'Unknown'}"
 
 class Image(models.Model):
     PROFILE_IMAGE = 0
