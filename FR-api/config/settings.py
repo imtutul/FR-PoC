@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     # 'ai_sync',
     'drf_spectacular',
     'corsheaders',
+    'zones',
+    'cameras'
 ]
 
 

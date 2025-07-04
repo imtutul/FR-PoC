@@ -40,6 +40,8 @@ urlpatterns = [
     # path('api/identified/', include('identified.urls')),
     path('api/suspected/', include('suspected.urls')),
     # path('api/ai/', include('ai_sync.urls')),
+    path('api/zones/', include('zones.urls')),
+    path('api/cameras/', include('cameras.urls')),
 
 
     # OpenAPI schema
