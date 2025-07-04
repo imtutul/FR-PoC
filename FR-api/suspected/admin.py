@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Suspect, SuspectImage
 
-# Register your models here.
+admin.site.register(Suspect)
+admin.site.register(SuspectImage)

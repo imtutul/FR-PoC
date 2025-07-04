@@ -42,6 +42,7 @@ urlpatterns = [
     # path('api/ai/', include('ai_sync.urls')),
     path('api/zones/', include('zones.urls')),
     path('api/cameras/', include('cameras.urls')),
+    path('api/incidents/', include('incidents.urls')),
 
 
     # OpenAPI schema
