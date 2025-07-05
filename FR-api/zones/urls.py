@@ -2,5 +2,5 @@ from django.urls import path
 from .views import ZoneCreateView
 
 urlpatterns = [
-    path('create/', ZoneCreateView.as_view(), name='create_zone'),
+    path('zone/create/', ZoneCreateView.as_view(), name='create_zone'),
 ]

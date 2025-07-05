@@ -25,8 +25,8 @@ from drf_spectacular.views import (
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('core.urls')),
-    path('zone/', include('zones.urls')),
-    path('camera/', include('cameras.urls')),
+    path('api/', include('zones.urls')),
+    path('api/', include('cameras.urls')),
 
         # OpenAPI schema
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
