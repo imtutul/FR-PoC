@@ -39,10 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'core',
+    'zones',
+    'cameras',
     'rest_framework',
 
     'drf_spectacular',
-    'corsheaders',
+    'corsheaders'
 ]
 
 
