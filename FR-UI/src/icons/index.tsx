@@ -51,6 +51,9 @@ import HorizontaLDots from "./horizontal-dots.svg";
 import ChatIcon from "./chat.svg";
 import MoreDotIcon from "./more-dot.svg";
 import BellIcon from "./bell.svg";
+import AssociateIcon from "./associate-human.svg";
+import SuspectIcon from "./suspect-human.svg";
+import POIIcon from "./poi-human.svg";
 
 export {
   DownloadIcon,
@@ -106,4 +109,7 @@ export {
   HorizontaLDots,
   ChevronUpIcon,
   ChatIcon,
+  AssociateIcon,
+  SuspectIcon,
+  POIIcon
 };
