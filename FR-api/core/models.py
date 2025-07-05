@@ -52,7 +52,7 @@ class Incident(models.Model):
 
     start_on = models.DateTimeField(default=now)
     end_on = models.DateTimeField(null=True, blank=True)
-    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default="open")
+    status = models.IntegerField(choices=STATUS_CHOICES, default=1)
     humans = models.ManyToManyField("Human", blank=True, related_name="incidents")
     video_clip = models.URLField(null=True, blank=True)
     best_image = models.URLField(null=True, blank=True)
@@ -69,7 +69,7 @@ class IncidentDetail(models.Model):
 
     incident = models.ForeignKey(Incident, on_delete=models.CASCADE, related_name="details")
     timestamp = models.DateTimeField(default=now)
-    status = models.CharField(max_length=10, choices=STATUS_CHOICES)
+    status = models.IntegerField(choices=STATUS_CHOICES)
     humans = models.ManyToManyField("Human", blank=True, related_name="incident_details")
     image = models.URLField()
 
